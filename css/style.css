@@ -1,14 +1,18 @@
+/* Стили для index.html */
+
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-backgroud-color: #f5f4fa;
 }
 
 ul {
   list-style: none;
 }
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
 h2 {
@@ -31,6 +35,9 @@ h2 {
 .site-nav a:focus {
   color: var(--accent);
 }
+.site-nav a.current {
+  color: var(--accent);
+}
 
 /* Auth-nav */
 .auth-nav a {
@@ -45,11 +52,23 @@ h2 {
   background-color: #2f303a;
 }
 .hero .title {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
-.button {
+
+/* Button */
+button.primary {
   background-color: var(--accent);
+  color: var(--primary-white-color);
+}
+.button.secondary {
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-backgroud-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
   color: #ffffff;
+  background-color: var(--accent);
 }
 
 /* Second section */
@@ -59,7 +78,7 @@ h2 {
 
 /* Fourth section */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-backgroud-color);
 }
 .team-member {
   color: var(--secondary-text-color);
@@ -69,8 +88,13 @@ h2 {
   background-color: #2f303a;
 }
 .logo .text {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 .address {
-  color: #ffffff;
+  color: var(--primary-white-color);
+}
+
+/* Стили для portfolio.html */
+.portfolio .title {
+  color: var(--secondary-text-color);
 }
