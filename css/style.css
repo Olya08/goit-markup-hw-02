@@ -1,0 +1,38 @@
+/* колір основного тексту color: #757575; */
+/* вторинний колір тексту color: #212121; */
+/* ще один вторинний #FFFFFF */
+/* акцент color: #2196F3; */
+/* вторинний background #2F303A */
+
+ul {
+  list-style: none;
+}
+body {
+  background-color: #ffffff;
+  color: #757575;
+}
+
+/* Logo */
+.logo {
+  color: #2196f3;
+}
+.logo .name {
+  color: #212121;
+}
+
+/* Site-nav */
+.site-nav a {
+  color: #212121;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2196f3;
+}
+
+/* Auth-nav */
+.auth-nav a {
+  color: #757575;
+}
+.auth-nav a:hover {
+  color: #2196f3;
+}
