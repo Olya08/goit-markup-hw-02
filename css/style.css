@@ -59,10 +59,15 @@ body {
 }
 .auth-nav.bottom {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
   letter-spacing: 0.03em;
+}
+.auth-nav.bottom:hover,
+.auth-nav.bottom:focus {
+  color: var(--accent);
 }
 /* Hero */
 .hero {
@@ -102,6 +107,9 @@ button.primary {
   color: #ffffff;
   background-color: var(--accent);
 }
+.pointer {
+  cursor: pointer;
+}
 
 /* Second section */
 .section.title {
@@ -121,7 +129,6 @@ button.primary {
   text-transform: uppercase;
 }
 .text .features {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
   letter-spacing: 0.03em;
@@ -147,7 +154,6 @@ button.primary {
 .footer {
   background-color: #2f303a;
   letter-spacing: 0.03em;
-  font-family: Roboto;
 }
 .logo .text {
   color: var(--primary-white-color);
@@ -169,8 +175,6 @@ button.primary {
 }
 .portfolio .text {
   color: var(--primary-text-color);
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1, 87;
   letter-spacing: 0.03em;
